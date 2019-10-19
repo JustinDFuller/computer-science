@@ -18,6 +18,8 @@ int string_to_number(const std::string& s) {
   return number;
 }
 
+// Also apparently return std::stoi(s);
+
 // Sample Tests
 //
 // Describe(stringToNumber)
