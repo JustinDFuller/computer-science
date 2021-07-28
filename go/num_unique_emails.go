@@ -49,7 +49,7 @@ func numUniqueEmails(emails []string) int {
             local += string(char)
         }
         
-        uniques[local + split[1]] = true
+        uniques[local + "@" + split[1]] = true
     } 
     
     return len(uniques)
