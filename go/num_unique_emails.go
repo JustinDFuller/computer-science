@@ -24,6 +24,9 @@
 //  Rules applied to domain
 //  No domain
 //  No local    
+//
+// Improvements:
+//  Could store map[string][]string where key is domain and slice of strings is emails.
 func numUniqueEmails(emails []string) int {
     uniques := map[string]bool{}
     
