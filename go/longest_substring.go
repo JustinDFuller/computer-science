@@ -11,9 +11,13 @@ Questions:
     do we count the dupes in the count? yes, only one
     
 Examples:
-    abcabcbb -> 3 (abc)
-    abcd -> 4 (abcd)
-    dabcd -> d (dabc)
+    "" -> 0
+    "a" -> 1
+    "abc" -> 3
+    "aaa" -> 1
+    "aaabcd" -> 4
+    "abcddd" -> 4
+    "abbbcd" -> 3
     
 Strategies:
     loop through the string
@@ -39,8 +43,8 @@ Strategies:
         1. 2 pointers, both start at index 0
         2. check subs for duplicates
             if no duplicates, set max to len if len > max
-            if no duplicates, extend right pointer (j++)
-            if duplicates, contract left pointer (i++)
+            if no duplicates, extend end pointer (j++)
+            if duplicates, contract start pointer (i++)
         3. repeat until i and j both at len(s) - 1 
         loop + loop = O(n^2) quadratic time complexity
         still using map that is maximum the size of the charset used
@@ -51,7 +55,7 @@ Strategies:
             seen[char] = true
             lastSeen[char] = j
         3. check if lastSeen[char] >= i (we saw it before, and in the current substring)
-            move i to seen[j] + 1 (right after the last duplicate)
+            move i to seen[j] + 1 (end after the last duplicate)
         4. set seen[s[j]] = j
         5. check if j - i (len of subs) is greater than max
             if yes, max = j - i
@@ -91,23 +95,19 @@ func lengthOfLongestSubstring(s string) int {
     } */
     
     /* optimized sliding window */
-    i, j := 0, 0
-    seen := map[byte]bool{}
-    last := map[byte]int{}
-    for j < len(s) {
-        char := s[j]
-        hasDupes := seen[char]
-        lastSeen := last[char]
+    start, end := 0, 0
+    jumpTo := map[byte]int{}
+    for end < len(s) {
+        byt := s[end]
         
-        if hasDupes && lastSeen >= i {
-            i = lastSeen + 1
-        } else if l := j - i + 1; l  > max {
+        if jump := jumpTo[byt]; jump > start {
+            start = jump
+        } else if l := end - start + 1; l  > max {
             max = l
         }
         
-        seen[char] = true
-        last[char] = j
-        j++
+        jumpTo[byt] = end + 1
+        end++
     }
     
    return max 
