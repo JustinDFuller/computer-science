@@ -21,11 +21,13 @@ Always include test cases for these standard pattern variations. These can apply
 
 ### Formulas
 
-1. Brute force: create all permutations of the thing.
+1. Brute force: create and search all permutations for a condition.
 
-Loop over the string, number, or array to find every permutation. Check every permutation for the thing. This may involve 3 loops: loop over the iterable, loop again from each starting point, potentially loop over again if you need to check the contents of each permutation (like duplicates).
+Loop over the string, number, or array to find every permutation. Search every permutation for the condition (ex. duplications). This may involve 3 loops: loop over the iterable, loop again from each starting point, potentially loop over again if you need to check the contents of each permutation (like duplicates).
 
-_Algorithmic Complexity:_ Exponential.
+_Algorithmic Complexity:_ 
+  - Time: almost Cubic O(n^3) but you can optimize to not run all 3 loops for the entirety of the array.
+  - Space: Linear O(m) have to create a map of seen values, limited by charset of whatever you index values by (ex. UTF chars).
 
 2. Sliding Window
 
