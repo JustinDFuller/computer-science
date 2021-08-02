@@ -29,7 +29,13 @@ _Algorithmic Complexity:_ Exponential.
 
 2. Sliding Window
 
-TODO
+Maintain two pointers to the iterable. Maintain a dictionary of seen values. Ideally, dictionary stores last location that value was seen.
+
+When the condition is false (ex. repeated chars not found) move the right pointer up. When the condition is true (ex. repeating chars found), move the left pointer up. Ideally, move the left pointer to a known-good location (ex. where the last repeated char was found + 1). When the right pointer reaches the end of the iterable, you are done.
+
+_Algorithmic Complexity_:
+  Time: Linear O(n). Worst case, you have to move each pointer to each location O(2n), which reduces to O(n) which is linear.
+  Space: Linear O(m) where m is the charset by which you index values. May be UTF characters or something else.
 
 3. Tree
 
