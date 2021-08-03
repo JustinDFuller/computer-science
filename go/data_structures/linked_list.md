@@ -114,3 +114,13 @@ func (s *SinglyLinkedNode) Delete(n int) error {
 	return node.DeleteNext()
 }
 ```
+
+Deleting the first node is as easy as deleting or replacing the pointer to `head`.
+
+```go
+head := &SinglyLinkedList{}
+// delete
+head = nil
+// replace
+head = &SinglyLinkedList{}
+```
