@@ -13,6 +13,7 @@ There are many ways to iterate or traverse over the nodes in a tree.
 Visit the root first, then recursively visit the left, then the right nodes in a tree.
 
 ```go
+// preorderTraversal will visit the root, left, then right nodes.
 func preorderTraversal(root *TreeNode) []int {
     if root == nil {
         return []int{}
@@ -37,6 +38,29 @@ func preorderTraversal(root *TreeNode) []int {
 Recursively visit the left, then the root, then the right nodes in a tree.
 
 For a binary search tree, we can retrieve data in sorted order with an in-order traversal.
+
+```go
+// inorderTraversal will visit the left, root, then right nodes.
+func inorderTraversal(root *TreeNode) []int {
+    var ints []int
+
+    if root == nil {
+        return ints
+    }
+    
+    if root.Left != nil {
+        ints = append(ints, inorderTraversal(root.Left)...)
+    }
+    
+    ints = append(ints, root.Val)
+    
+    if root.Right != nil {
+        ints = append(ints, inorderTraversal(root.Right)...)
+    }
+    
+    return ints
+}
+```
 
 ## Post-Order Traversal
 
