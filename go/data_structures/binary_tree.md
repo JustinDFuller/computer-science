@@ -12,6 +12,26 @@ There are many ways to iterate or traverse over the nodes in a tree.
 
 Visit the root first, then recursively visit the left, then the right nodes in a tree.
 
+```go
+func preorderTraversal(root *TreeNode) []int {
+    if root == nil {
+        return []int{}
+    }
+    
+    ints := []int{root.Val}
+    
+    if root.Left != nil {
+        ints = append(ints, preorderTraversal(root.Left)...)
+    }
+    
+    if root.Right != nil {
+        ints = append(ints, preorderTraversal(root.Right)...)
+    }
+    
+    return ints
+}
+```
+
 ## In-Order Traversal
 
 Recursively visit the left, then the root, then the right nodes in a tree.
