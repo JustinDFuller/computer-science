@@ -66,5 +66,25 @@ func inorderTraversal(root *TreeNode) []int {
 
 Visit the left nodes first, visit the right nodes second, visit the root node last.
 
-Deleting from a tree is always in post-order.
+```go
+// postorderTraversal will visit the left nodes first, the right nodes second, and the root node last.
+func postorderTraversal(root *TreeNode) []int {
+    var ints []int
 
+    if root == nil {
+        return ints
+    }
+    
+    if root.Left != nil {
+        ints = append(ints, postorderTraversal(root.Left)...)
+    }
+    
+    if root.Right != nil {
+        ints = append(ints, postorderTraversal(root.Right)...)
+    }
+    
+    return append(ints, root.Val)
+}
+```
+
+Deleting from a tree is always in post-order.
