@@ -1,8 +1,4 @@
-# problems
-
-[![](https://www.codewars.com/users/JustinDFuller/badges/micro)](https://www.codewars.com/users/JustinDFuller)
-
-Solving problems in different languages. Mostly from [codewars](https://codewars.com).
+<img src="https://repository-images.githubusercontent.com/212989121/78532e2f-9749-4d93-84f2-6216605ebd1a" />
 
 ## Formulas and Patterns for solving algorithms
 
