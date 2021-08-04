@@ -14,6 +14,8 @@ Always include test cases for these standard pattern variations. These can apply
 6. Ending pattern ("ABCDDDD")
 7. Middle pattern ("ABCCCDE")
 8. Repeating pattern ("ABCABC")
+9. Reeeaaalllly long pattern ("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBB")
+10. Reeeealllly long absence of pattern ("ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789")
 
 ### Formulas
 
