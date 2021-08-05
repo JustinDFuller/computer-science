@@ -134,3 +134,44 @@ func levelOrder(root *TreeNode) [][]int {
     return ints
 }
 ```
+
+## Solving Tree Problems Recursively
+
+## Top-Down Recursion
+
+In top-down recursion, we start at the top of the tree, compute some values, then send them to the next level of the tree through recursion. This is also known as preorder traversal.
+
+```go
+func topDownDepth(n *Node, depth int) int {
+    if n == nil {
+        return depth
+    }
+    
+    left := topDownDepth(n.Left, depth + 1)
+    ight := topDownDepth(n.Right, depth + 1)
+    
+    if left > right {
+        return left
+    }
+    return right
+}
+```
+
+## Bottom-Up Recursion
+
+```go
+func bottomUpDepth(n *Node, depth int) int {
+    if node == nil {
+        return depth
+    }
+    
+    left := bottomUpDepth(n.Left, depth)
+    right := bottomUpDepth(n.Right, depth)
+    
+    if left > right {
+        return left + 1
+    }
+    return right + 1
+}
+```
+
