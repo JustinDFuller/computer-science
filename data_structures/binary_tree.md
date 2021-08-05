@@ -88,3 +88,49 @@ func postorderTraversal(root *TreeNode) []int {
 ```
 
 Deleting from a tree is always in post-order.
+
+## Level-Order Traversal
+
+Level-order traversal searches the tree level by level. Completely search one level before going to the next.
+
+Typically, level-order traversal is paired with a queue (LIFO).
+
+```go
+// levelOrder will retrieve values from each level before proceeding to the next.
+func levelOrder(root *TreeNode) [][]int {
+    var ints [][]int
+    var queue []*TreeNode
+    
+    // Start the queue with the root, if it's not empty.
+    if root != nil {
+        queue = append(queue, root)
+    }
+    
+    for len(queue) > 0 {
+        var level []int
+        
+        // cache the size of the queue before starting the loop, since we'll be adding to the queue inside the loop.
+        size := len(queue)
+        for i := 0; i < size; i++ {
+        
+            // pop the first element off the queue.
+            node := queue[0]
+            queue = queue[1:]
+            
+            // Add the current node's value to the level
+            level = append(level, node.Val)
+            
+            // add left and right to the queue, to be ran on the next iteration of the outer loop.
+            if node.Left != nil {
+                queue = append(queue, node.Left)
+            }
+            if node.Right != nil {
+                queue = append(queue, node.Right)
+            }
+        }
+        ints = append(ints, level)
+    }
+    
+    return ints
+}
+```
