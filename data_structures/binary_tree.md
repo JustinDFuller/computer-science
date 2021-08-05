@@ -159,6 +159,8 @@ func topDownDepth(n *Node, depth int) int {
 
 ## Bottom-Up Recursion
 
+In bottom-up recursion, we go all the way to the bottom of the tree before we begin calculating anything. 
+
 ```go
 func bottomUpDepth(n *Node, depth int) int {
     if node == nil {
@@ -175,3 +177,4 @@ func bottomUpDepth(n *Node, depth int) int {
 }
 ```
 
+In the above examples, you may notice that they would produce the same result. So, the order doesn't really matter. However, there are other problems where the order _will_ matter. 
