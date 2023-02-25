@@ -37,6 +37,12 @@ Always include test cases for these standard pattern variations. These can apply
       - Time: Linear O(n). Worst case, you have to move each pointer to each location O(2n), which reduces to O(n) which is linear.
       - Space: Linear O(m) where m is the charset by which you index values. May be UTF characters or something else.
 
-3. Tree
+3. Removals
 
-TODO
+When removing from an array, you should often opt to iterate in reverse, to prevent the changing length from causing problems.
+
+You could also consider these other data structures that are better at removals:
+
+* Hashmap or Dictionary O(1)
+* Queue or Stack are potentially O(1)
+* Linked List O(n)
