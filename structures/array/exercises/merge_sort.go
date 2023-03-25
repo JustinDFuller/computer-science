@@ -1,5 +1,5 @@
 // Merge Sort Array
-package main
+package exercises
 
 import (
 	"log"

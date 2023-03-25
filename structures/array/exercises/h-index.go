@@ -2,7 +2,7 @@
 // of a researcher's papers, and compute the researcher's h-index.
 // By definition, a scientist has index h if h of their papers have been cited at least h times,
 // while the other n - h papers each have no more than h citations.
-package main
+package exercises
 
 import (
 	"log"

@@ -1,4 +1,4 @@
-package main
+package exercises
 
 import (
 	"log"
@@ -6,11 +6,13 @@ import (
 	"sort"
 )
 
-/**
+/*
+*
 Let S be an unsorted array of n integers.
 Given an algorithm that finds the pair x,y ∈ S that maximizes |x-y|.
 Your algorithm must run in O(n) worst-case time.
-**/
+*
+*/
 func findUnsortedMaxDifference(s []int) (int, int) {
 	if s == nil || len(s) == 0 {
 		return 0, 0
@@ -32,30 +34,36 @@ func findUnsortedMaxDifference(s []int) (int, int) {
 	return max, min
 }
 
-/**
+/*
+*
 Let S be a sorted array of n integers.
 Give an algorithm that finds the pair x,y ∈ S that maximizes |x-y|.
 Your algorithm must run in O(1) worst-case time.
-**/
+*
+*/
 func findSortedMaxDifference(s []int) (int, int) {
 	return s[len(s)-1], s[0]
 }
 
-/**
+/*
+*
 Let S be an unsorted array of n integers.
 Give an algorithm that finds the pair x, y ∈ S that minimizes |x-y|, for x != y.
 Your algorithm must run in O(n log n) worst-case time.
-**/
+*
+*/
 func findUnsortedMinDifference(s []int) (int, int) {
 	sort.Ints(s)
 	return findSortedMinDifference(s)
 }
 
-/**
+/*
+*
 Let S be a sorted array of n integers.
 Give an algorithm that finds the pair x, y ∈ S that minimizes |x-y|, for x != y.
 Your algorithm must run in O(n) worst-case time.
-**/
+*
+*/
 func findSortedMinDifference(s []int) (int, int) {
 	if len(s) < 1 {
 		return 0, 0

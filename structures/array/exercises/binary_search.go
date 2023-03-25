@@ -1,5 +1,5 @@
 // Binary Search
-package main
+package exercises
 
 import (
 	"log"
@@ -58,7 +58,7 @@ func main() {
 		log.Printf("Loop Found: %d, wanted: %d", binarySearchLoop(ints, val), index)
 		log.Printf("Recurse Found: %d, wanted: %d", binarySearchRecurse(ints, val), index)
 	}
-	
+
 	log.Printf("Loop Found: %d, wanted: %d", binarySearchLoop(ints, 0), -1)
 	log.Printf("Recurse Found: %d, wanted: %d", binarySearchRecurse(ints, 900), -1)
 }

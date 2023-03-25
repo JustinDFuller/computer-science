@@ -1,7 +1,7 @@
 // The mode is the number that occurs most frequently.
 // The set {4,6,2,4,3,1} has a mode of 4.
 // Given an efficient and correct algorithm to compute the mode of a bag of n numbers.
-package main
+package exercises
 
 import "log"
 
@@ -28,6 +28,5 @@ func main() {
 	ints := []int{4, 6, 2, 4, 3, 1}
 	log.Print(mode(ints))
 }
-
 
 // 2009/11/10 23:00:00 4

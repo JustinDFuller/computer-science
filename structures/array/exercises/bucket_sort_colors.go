@@ -3,7 +3,7 @@
 // You can assume that the array is sorted by number, but not by color
 // Given an O(n) algorithm to sort by color but keep each color sorted by number
 // 1 blue, 3 blue, 1 green, 4 green, 2 red
-package main
+package exercises
 
 import "log"
 

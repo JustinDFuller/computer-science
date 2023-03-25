@@ -1,7 +1,7 @@
 // Given two sets S1 and S2 and a number x, describe an algorithm
 // For finding whether there exists a pair of elements, one from S1 and another from S2
 // that add up to x.
-package main
+package exercises
 
 import "log"
 
@@ -26,7 +26,6 @@ func main() {
 	log.Print(pairExists(11, s1, s2))
 	log.Print(pairExists(17, s1, s2))
 }
-
 
 // 2009/11/10 23:00:00 true
 // 2009/11/10 23:00:00 false
