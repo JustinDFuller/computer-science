@@ -46,3 +46,104 @@ You could also consider these other data structures that are better at removals:
 * Hashmap or Dictionary O(1)
 * Queue or Stack are potentially O(1)
 * Linked List O(n)
+
+## Concepts
+
+- [ ] Space and Time Complexity
+  - [ ] Memory Usage (Number of entries Data Structure)
+  - [ ] Recursion Usage (Number of Recursions)
+- [ ] How to recognize common complexities
+  - [ ] Constant Complexity `O(1)`
+  - [ ] Logarithmic Complexity `O(log n)`
+  - [ ] Linear Complexity `O(n)`
+  - [ ] Linearithmic Complexity `O(n log n)`
+  - [ ] Quadratic Time `O(n²)`
+  - [ ] Cubic Time `O(n³)`
+  - [ ] Exponential Time `2⁰⁽ⁿ⁾`
+  - [ ] Factorial Time `O(n!)`
+
+## Data Structures
+
+- [ ] Array
+- [ ] Linked List
+  - [ ] Singly Linked List
+  - [ ] Doubly Linked List
+  - [ ] Circular Linked List
+- [ ] Hash Table
+- [ ] Queue
+  - [ ] Circular Queue
+  - [ ] Priority Queue
+  - [ ] Double Ended Queue
+- [ ] Stack
+  - [ ] Min Stack
+  - [ ] Max Stack
+  - [ ] Min-Max Stack
+- [ ] Heap
+- [ ] Tree
+  - [ ] Binary Tree
+  - [ ] Binary Search Tree
+  - [ ] AVL Tree
+  - [ ] Red Black Tree
+  - [ ] Splay Tree
+  - [ ] Treap
+  - [ ] B-Tree
+  - [ ] N-ary Tree 
+- [ ] Trie
+- [ ] Graph
+  - [ ] Undirected Graph
+  - [ ] Directed Graph
+  - [ ] Cyclic Graph
+  - [ ] Edge Labeled Graph
+  - [ ] Directed Acyclic Graph
+  - [ ] Disconnected Graph
+  - [ ] Weighted Graph
+  - [ ] Unweighted Graph
+  - [ ] Adjacency List
+  - [ ] Adjacency Matrix
+- [ ] Bit (Bit manipulation)
+
+## Algorithms
+
+- Array
+  - Unsorted Search
+    - [ ] Sliding Window
+    - [ ] Double Sliding Window
+    - [ ] Reference hash table or map
+  - Sorted Search
+    - [ ] Binary Search
+    - [ ] Jump Search
+    - [ ] Interpolation Search
+    - [ ] Exponential Search
+    - [ ] Ternary Search
+  - Sorting
+    - [ ] Quick Sort
+    - [ ] Merge Sort
+    - [ ] Tim Sort
+    - [ ] Bubble Sort
+    - [ ] Radix Sort
+    - [ ] Counting Sort
+    - [ ] Heap Sort
+- Linked List
+- Hash Table
+- Queue
+- Stack
+- Trees
+  - Breadth-First Search
+  - Depth-First Search
+- Graphs
+- Bit Manipulation
+  - [ ] AND
+  - [ ] OR
+  - [ ] XOR
+  - [ ] NOT
+  - [ ] Bit Shifts
+
+## Concurrent Programming
+
+- Building Blocks
+  - [ ] Goroutine
+  - [ ] Mutex
+  - [ ] Channel
+  - [ ] Buffered Channel
+- Strategies
+  - [ ] Pipeline
