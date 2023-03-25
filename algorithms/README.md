@@ -1,0 +1,36 @@
+# Algorithms
+
+- Array
+  - Unsorted Search
+    - [ ] Sliding Window
+    - [ ] Double Sliding Window
+    - [ ] Reference hash table or map
+  - Sorted Search
+    - [ ] Binary Search
+    - [ ] Jump Search
+    - [ ] Interpolation Search
+    - [ ] Exponential Search
+    - [ ] Ternary Search
+  - Sorting
+    - [ ] Quick Sort
+    - [ ] Merge Sort
+    - [ ] Tim Sort
+    - [ ] Bubble Sort
+    - [ ] Radix Sort
+    - [ ] Counting Sort
+    - [ ] Heap Sort
+- Linked List
+- Hash Table
+- Queue
+- Stack
+- Trees
+  - Breadth-First Search
+  - Depth-First Search
+- Graphs
+- Bit Manipulation
+  - [ ] AND
+  - [ ] OR
+  - [ ] XOR
+  - [ ] NOT
+  - [ ] Bit Shifts
+
