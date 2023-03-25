@@ -62,3 +62,9 @@ You could also consider these other data structures that are better at removals:
   - [ ] Exponential Time `2⁰⁽ⁿ⁾`
   - [ ] Factorial Time `O(n!)`
 
+## Resources
+
+* [The Algorithm Design Manual](https://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena/dp/1849967202)
+* [Concurrency in Go](https://www.oreilly.com/library/view/concurrency-in-go/9781491941294/)
+* [The Go Programming Language](https://www.amazon.com/Programming-Language-Addison-Wesley-Professional-Computing/dp/0134190440)
+* [Design Patterns](https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612/ref=sr_1_1?crid=38NWMN4N4N355&keywords=design+patterns&qid=1679748676&s=books&sprefix=design+patterns%2Cstripbooks%2C86&sr=1-1)
